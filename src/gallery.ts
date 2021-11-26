@@ -1,5 +1,5 @@
-import {Modal} from 'components/modal'
-import {Carrousel} from 'components/carrousel'
+import {Modal} from './modal'
+import {Carrousel} from './carrousel'
 
 /* a gallery should have thumbnails and full pictures.
  * html code can look like:

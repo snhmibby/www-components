@@ -1,4 +1,4 @@
-import {Icon, IconButton} from 'components/iconbutton';
+import {Icon, IconButton} from './iconbutton';
 
 /* carrousel creates a div with buttons and a list of items
  * and will create a looping carrousel with the list of elements on the div.
