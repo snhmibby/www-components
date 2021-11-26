@@ -13,8 +13,9 @@
 	--item-width: 100%;
 	--item-height: 100%;
 
-	/* the idea is that everything from carrousel, through the list, to all the items
-	 * get the same size. then the list creates a scrolled row, and enables scrollsnap */
+	/* the idea is that the carrousel div, the list and all the items get the
+	 * same size. then the list creates a scrolled row, and enables scrollsnap
+	 */
 	.carrousel-list {
 		list-style: none;
 		display: flex;
