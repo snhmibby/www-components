@@ -2,26 +2,28 @@ import {Modal} from './modal'
 import {Carrousel} from './carrousel'
 
 /* a gallery should have thumbnails and full pictures.
- * html code can look like:
+ *
+ * suggested html code (also 'works' without javascript):
  * <div class="gallery">
  *   <a class="gallery-full" href="link-to-img">
  *     <img class="gallery-thumb" src="path/to.img"
  *   </a>
  *   ...
  *
- * or
+ * but the following would also work:
  * <div class="gallery">
  *   <img class="gallery-thumb" src="..">
  *   <img class="gallery-full" src="..">
  *   ...
  *
- * The only rules are: thumb and full elements should be in same order
- * If gallery-full is an anchor element, it is assumed to be an img and will be used as img src.
- * Otherwise, it can be an arbitrary html element.
+ * Thumbnail and full size elements should be in same order.
+ * If gallery-full is an anchor element, it is assumed to link to an image.
+ * Otherwise, it can be an arbitrary html element to be displayed in the carrousel.
  *
  * Basically, the code removes all gallery-{thumb,full} nodes and adds them
- * again in an ordered list context in different places. The thumbnails stay in the gallery,
- * while the full size images are placed in a modal-element.
+ * again in an ordered list context in different places.
+ * The thumbnails stay in the gallery, while the full size images are placed in
+ * a modal-element.
  */
 
 export class Gallery {
