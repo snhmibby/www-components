@@ -48,9 +48,9 @@ export class Gallery {
 		//create an array of the fullsize elements.
 		let fullsize = Array.from(full).map((el: HTMLElement) => {
 			//special handling for anchor tags; create an img tag for the href
-			//this is so that without javascript, the gallery can still function by linking
-			//the thumbnails to the fullsize image.
-			//when javascript works we can remove the link and make a cool carrousel :D
+			//this is so that without javascript, the gallery can still
+			//function by linking the thumbnails to the fullsize image.  when
+			//javascript works we can remove the link and make a cool carrousel :D
 			if (el.tagName.toUpperCase() != "A") {
 				return el
 			}
