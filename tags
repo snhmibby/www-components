@@ -1,0 +1,46 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+.carrousel	style/_carrousel.scss	/^.carrousel {$/;"	c
+.carrousel-item	style/_carrousel.scss	/^		.carrousel-item {$/;"	c
+.carrousel-list	style/_carrousel.scss	/^	.carrousel-list {$/;"	c
+.close	style/_modal.scss	/^	.close {$/;"	c
+.gallery	style/_gallery.scss	/^.gallery {$/;"	c
+.gallery-thumb	style/_gallery.scss	/^	.gallery-thumb {            $/;"	c
+.hidden	style/_modal.scss	/^.hidden {$/;"	c
+.icon-button	style/_carrousel.scss	/^	.icon-button {$/;"	c
+.icon-button	style/_iconbutton.scss	/^.icon-button {$/;"	c
+.modal	style/_modal.scss	/^.modal {$/;"	c
+.next-button	style/_carrousel.scss	/^	.next-button {$/;"	c
+.prev-button	style/_carrousel.scss	/^	.prev-button {$/;"	c
+Carrousel	src/carrousel.ts	/^export class Carrousel {$/;"	c
+Gallery	src/gallery.ts	/^export class Gallery {$/;"	c
+HTMLNode	src/carrousel.ts	/^	HTMLNode : HTMLDivElement \/\/the actual carrousel element$/;"	p	class:Carrousel
+Icon	src/iconbutton.ts	/^export const Icon =$/;"	C
+IconButton	src/iconbutton.ts	/^export function IconButton(parent: HTMLElement, html: string, fn): HTMLElement {$/;"	f
+Modal	src/modal.ts	/^export class Modal {$/;"	c
+constructor	src/gallery.ts	/^	constructor(gallery: HTMLElement) {$/;"	m	class:Gallery
+constructor	src/modal.ts	/^	constructor(el: HTMLElement) {$/;"	m	class:Modal
+div	src/modal.ts	/^	div : HTMLDivElement$/;"	p	class:Modal
+hide	src/modal.ts	/^	hide() {$/;"	m	class:Modal
+i	src/carrousel.ts	/^			let n = item[i].getBoundingClientRect()$/;"	v
+i	src/carrousel.ts	/^		for (let i = 0; i < item.length; i++) {$/;"	v
+i	src/carrousel.ts	/^		let i = (this.current() + 1) % this.nelem$/;"	v
+i	src/carrousel.ts	/^		let i = (this.current() - 1 + this.nelem) % this.nelem$/;"	v
+id	src/carrousel.ts	/^	id = 'id' + performance.now()$/;"	p	class:Carrousel
+item	src/carrousel.ts	/^		let item = this.items()$/;"	v
+li	src/carrousel.ts	/^			let li = document.createElement('li')$/;"	v
+list	src/carrousel.ts	/^		let list = document.createElement('ol')$/;"	v
+n	src/carrousel.ts	/^			let n = item[i].getBoundingClientRect()$/;"	v
+next	src/carrousel.ts	/^		let next = IconButton(this.HTMLNode, Icon.ChevronRight, () => this.next())$/;"	v
+node	src/carrousel.ts	/^		let node = document.getElementById(this.itemID(i))$/;"	v
+p	src/carrousel.ts	/^		let p = this.HTMLNode.getBoundingClientRect()$/;"	v
+prev	src/carrousel.ts	/^		let prev = IconButton(this.HTMLNode, Icon.ChevronLeft, () => this.prev())$/;"	v
+show	src/modal.ts	/^	show() {$/;"	m	class:Modal
+www-components	README.md	/^# www-components$/;"	c
