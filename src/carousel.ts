@@ -1,27 +1,27 @@
 import {Icon, IconButton} from './iconbutton';
 
-/* carrousel creates a div with buttons and a list of items
- * and will create a looping carrousel with the list of elements on the div.
- * The Carrousel div can be accessed on the 'HTMLNode' property.
+/* carousel creates a div with buttons and a list of items
+ * and will create a looping carousel with the list of elements on the div.
+ * The Carousel div can be accessed on the 'HTMLNode' property.
  */
-export class Carrousel {
-	HTMLNode : HTMLDivElement //the actual carrousel element
+export class Carousel {
+	HTMLNode : HTMLDivElement //the actual carousel element
 	id = 'id' + performance.now()
 	nelem = 0
 	lastcurrent = 0
 	scrollFocus : HTMLOListElement //focus this for left/right buttons to scroll
 
 	/* create structure like:
-	 * <div class='carrousel'>
+	 * <div class='carousel'>
 	 *   <button prev>
 	 *   <button next>
-	 *   <ol class='carrousel-list'>
-	 *     <li class='carrousel-item'>
+	 *   <ol class='carousel-list'>
+	 *     <li class='carousel-item'>
 	 *       <item from arguments>
 	 */
 	constructor(items: HTMLElement[]) {
 		this.HTMLNode = document.createElement('div')
-		this.HTMLNode.className = 'carrousel'
+		this.HTMLNode.className = 'carousel'
 		this.nelem = items.length
 
 		let prev = IconButton(this.HTMLNode, Icon.ChevronLeft, () => this.prev())
@@ -32,10 +32,10 @@ export class Carrousel {
 		let list = document.createElement('ol')
 		this.scrollFocus = list
 		this.HTMLNode.appendChild(list)
-		list.className = 'carrousel-list'
+		list.className = 'carousel-list'
 		items.forEach((v, key) => {
 			let li = document.createElement('li')
-			li.className = 'carrousel-item'
+			li.className = 'carousel-item'
 			li.id = this.itemID(key)
 			li.appendChild(v)
 			list.appendChild(li)
@@ -47,7 +47,7 @@ export class Carrousel {
 	}
 
 	items(): NodeListOf<HTMLElement> {
-		return this.HTMLNode.querySelectorAll('.carrousel-item')
+		return this.HTMLNode.querySelectorAll('.carousel-item')
 	}
 
 	current(): number {

@@ -1,5 +1,5 @@
 import {Modal} from './modal'
-import {Carrousel} from './carrousel'
+import {Carousel as Carousel} from './carrousel'
 
 /* a gallery should have thumbnails and full pictures.
  *
@@ -18,7 +18,7 @@ import {Carrousel} from './carrousel'
  *
  * Thumbnail and full size elements should be in same order.
  * If gallery-full is an anchor element, it is assumed to link to an image.
- * Otherwise, it can be an arbitrary html element to be displayed in the carrousel.
+ * Otherwise, it can be an arbitrary html element to be displayed in the carousel.
  *
  * Basically, the code removes all gallery-{thumb,full} nodes and adds them
  * again in an ordered list context in different places.
@@ -51,7 +51,7 @@ export class Gallery {
 			//special handling for anchor tags; create an img tag for the href
 			//this is so that without javascript, the gallery can still
 			//function by linking the thumbnails to the fullsize image.  when
-			//javascript works we can remove the link and make a cool carrousel :D
+			//javascript works we can remove the link and make a cool carousel :D
 			if (el.tagName.toUpperCase() != "A") {
 				return el
 			}
@@ -60,13 +60,13 @@ export class Gallery {
 			return img
 		})
 
-		let carrousel = new Carrousel(fullsize)
-		let modal = new Modal(carrousel.HTMLNode)
+		let carousel = new Carousel(fullsize)
+		let modal = new Modal(carousel.HTMLNode)
 
 		for (let i = 0; i < thumb.length; i++) {
 			thumb[i].addEventListener('click', () => {
 				modal.show()
-				carrousel.focus(i)
+				carousel.focus(i)
 			})
 		}
 	}

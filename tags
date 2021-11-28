@@ -19,9 +19,9 @@
 .modal	style/_modal.scss	/^.modal {$/;"	c
 .next-button	style/_carrousel.scss	/^	.next-button {$/;"	c
 .prev-button	style/_carrousel.scss	/^	.prev-button {$/;"	c
-Carrousel	src/carrousel.ts	/^export class Carrousel {$/;"	c
+Carousel	src/carrousel.ts	/^export class Carousel {$/;"	c
 Gallery	src/gallery.ts	/^export class Gallery {$/;"	c
-HTMLNode	src/carrousel.ts	/^	HTMLNode : HTMLDivElement \/\/the actual carrousel element$/;"	p	class:Carrousel
+HTMLNode	src/carrousel.ts	/^	HTMLNode : HTMLDivElement \/\/the actual carousel element$/;"	p	class:Carousel
 Icon	src/iconbutton.ts	/^export const Icon =$/;"	C
 IconButton	src/iconbutton.ts	/^export function IconButton(parent: HTMLElement, html: string, fn): HTMLElement {$/;"	f
 Modal	src/modal.ts	/^export class Modal {$/;"	c
@@ -33,7 +33,7 @@ i	src/carrousel.ts	/^			let n = item[i].getBoundingClientRect()$/;"	v
 i	src/carrousel.ts	/^		for (let i = 0; i < item.length; i++) {$/;"	v
 i	src/carrousel.ts	/^		let i = (this.current() + 1) % this.nelem$/;"	v
 i	src/carrousel.ts	/^		let i = (this.current() - 1 + this.nelem) % this.nelem$/;"	v
-id	src/carrousel.ts	/^	id = 'id' + performance.now()$/;"	p	class:Carrousel
+id	src/carrousel.ts	/^	id = 'id' + performance.now()$/;"	p	class:Carousel
 item	src/carrousel.ts	/^		let item = this.items()$/;"	v
 li	src/carrousel.ts	/^			let li = document.createElement('li')$/;"	v
 list	src/carrousel.ts	/^		let list = document.createElement('ol')$/;"	v
