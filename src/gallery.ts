@@ -30,14 +30,14 @@ export class Gallery {
 	constructor(gallery: HTMLElement) {
 		let thumb: NodeListOf<HTMLElement> = gallery.querySelectorAll('.gallery-thumb')
 		let full: NodeListOf<HTMLElement> = gallery.querySelectorAll('.gallery-full')
-		let thumblist = document.createElement('ol')
-		gallery.appendChild(thumblist)
 
 		if (thumb.length != full.length) {
 			throw 'new Gallery(): thumbnails and fullsize images don\'t match'
 		}
 
-		full.forEach((el) => el.remove())
+		let thumblist = document.createElement('ol')
+		gallery.appendChild(thumblist)
+
 		thumb.forEach((el) => {
 			el.remove()
 			let li = document.createElement('li')
@@ -46,6 +46,7 @@ export class Gallery {
 		})
 
 		//create an array of the fullsize elements.
+		full.forEach((el) => el.remove()) // remove from document first (keep map functional)
 		let fullsize = Array.from(full).map((el: HTMLElement) => {
 			//special handling for anchor tags; create an img tag for the href
 			//this is so that without javascript, the gallery can still

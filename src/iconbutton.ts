@@ -1,5 +1,5 @@
 export function IconButton(parent: HTMLElement, html: string, fn): HTMLElement {
-	let btn = document.createElement('span')
+	let btn = document.createElement('button')
 	btn.innerHTML = html
 	btn.className = 'icon-button'
 	btn.onclick = fn
