@@ -1,4 +1,4 @@
-.carrousel {
+.carousel {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -13,10 +13,10 @@
 	--item-width: 100%;
 	--item-height: 100%;
 
-	/* the idea is that the carrousel div, the list and all the items get the
+	/* the idea is that the carousel div, the list and all the items get the
 	 * same size. then the list creates a scrolled row, and enables scrollsnap
 	 */
-	.carrousel-list {
+	.carousel-list {
 		list-style: none;
 		display: flex;
 		flex-flow: row nowrap;
@@ -31,7 +31,7 @@
 		scroll-behavior: smooth;
 	    scroll-snap-type: x mandatory;
 
-		.carrousel-item {
+		.carousel-item {
 			display: flex;
 			align-items: center;
 			justify-content: center;

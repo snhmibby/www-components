@@ -1,5 +1,5 @@
 import {Modal} from './modal'
-import {Carousel as Carousel} from './carrousel'
+import {Carousel as Carousel} from './carousel'
 
 /* a gallery should have thumbnails and full pictures.
  *
