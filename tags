@@ -7,21 +7,21 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	//
-.carrousel	style/_carrousel.scss	/^.carrousel {$/;"	c
-.carrousel-item	style/_carrousel.scss	/^		.carrousel-item {$/;"	c
-.carrousel-list	style/_carrousel.scss	/^	.carrousel-list {$/;"	c
+.carousel	style/_carousel.scss	/^.carousel {$/;"	c
+.carousel-item	style/_carousel.scss	/^		.carousel-item {$/;"	c
+.carousel-list	style/_carousel.scss	/^	.carousel-list {$/;"	c
 .close	style/_modal.scss	/^	.close {$/;"	c
 .gallery	style/_gallery.scss	/^.gallery {$/;"	c
 .gallery-thumb	style/_gallery.scss	/^	.gallery-thumb {            $/;"	c
 .hidden	style/_modal.scss	/^.hidden {$/;"	c
-.icon-button	style/_carrousel.scss	/^	.icon-button {$/;"	c
+.icon-button	style/_carousel.scss	/^	.icon-button {$/;"	c
 .icon-button	style/_iconbutton.scss	/^.icon-button {$/;"	c
 .modal	style/_modal.scss	/^.modal {$/;"	c
-.next-button	style/_carrousel.scss	/^	.next-button {$/;"	c
-.prev-button	style/_carrousel.scss	/^	.prev-button {$/;"	c
-Carousel	src/carrousel.ts	/^export class Carousel {$/;"	c
+.next-button	style/_carousel.scss	/^	.next-button {$/;"	c
+.prev-button	style/_carousel.scss	/^	.prev-button {$/;"	c
+Carousel	src/carousel.ts	/^export class Carousel {$/;"	c
 Gallery	src/gallery.ts	/^export class Gallery {$/;"	c
-HTMLNode	src/carrousel.ts	/^	HTMLNode : HTMLDivElement \/\/the actual carousel element$/;"	p	class:Carousel
+HTMLNode	src/carousel.ts	/^	HTMLNode : HTMLDivElement \/\/the actual carousel element$/;"	p	class:Carousel
 Icon	src/iconbutton.ts	/^export const Icon =$/;"	C
 IconButton	src/iconbutton.ts	/^export function IconButton(parent: HTMLElement, html: string, fn): HTMLElement {$/;"	f
 Modal	src/modal.ts	/^export class Modal {$/;"	c
@@ -29,18 +29,18 @@ constructor	src/gallery.ts	/^	constructor(gallery: HTMLElement) {$/;"	m	class:Ga
 constructor	src/modal.ts	/^	constructor(el: HTMLElement) {$/;"	m	class:Modal
 div	src/modal.ts	/^	div : HTMLDivElement$/;"	p	class:Modal
 hide	src/modal.ts	/^	hide() {$/;"	m	class:Modal
-i	src/carrousel.ts	/^			let n = item[i].getBoundingClientRect()$/;"	v
-i	src/carrousel.ts	/^		for (let i = 0; i < item.length; i++) {$/;"	v
-i	src/carrousel.ts	/^		let i = (this.current() + 1) % this.nelem$/;"	v
-i	src/carrousel.ts	/^		let i = (this.current() - 1 + this.nelem) % this.nelem$/;"	v
-id	src/carrousel.ts	/^	id = 'id' + performance.now()$/;"	p	class:Carousel
-item	src/carrousel.ts	/^		let item = this.items()$/;"	v
-li	src/carrousel.ts	/^			let li = document.createElement('li')$/;"	v
-list	src/carrousel.ts	/^		let list = document.createElement('ol')$/;"	v
-n	src/carrousel.ts	/^			let n = item[i].getBoundingClientRect()$/;"	v
-next	src/carrousel.ts	/^		let next = IconButton(this.HTMLNode, Icon.ChevronRight, () => this.next())$/;"	v
-node	src/carrousel.ts	/^		let node = document.getElementById(this.itemID(i))$/;"	v
-p	src/carrousel.ts	/^		let p = this.HTMLNode.getBoundingClientRect()$/;"	v
-prev	src/carrousel.ts	/^		let prev = IconButton(this.HTMLNode, Icon.ChevronLeft, () => this.prev())$/;"	v
+i	src/carousel.ts	/^			let n = item[i].getBoundingClientRect()$/;"	v
+i	src/carousel.ts	/^		for (let i = 0; i < item.length; i++) {$/;"	v
+i	src/carousel.ts	/^		let i = (this.current() + 1) % this.nelem$/;"	v
+i	src/carousel.ts	/^		let i = (this.current() - 1 + this.nelem) % this.nelem$/;"	v
+id	src/carousel.ts	/^	id = 'id' + performance.now()$/;"	p	class:Carousel
+item	src/carousel.ts	/^		let item = this.items()$/;"	v
+li	src/carousel.ts	/^			let li = document.createElement('li')$/;"	v
+list	src/carousel.ts	/^		let list = document.createElement('ol')$/;"	v
+n	src/carousel.ts	/^			let n = item[i].getBoundingClientRect()$/;"	v
+next	src/carousel.ts	/^		let next = IconButton(this.HTMLNode, Icon.ChevronRight, () => this.next())$/;"	v
+node	src/carousel.ts	/^		let node = document.getElementById(this.itemID(i))$/;"	v
+p	src/carousel.ts	/^		let p = this.HTMLNode.getBoundingClientRect()$/;"	v
+prev	src/carousel.ts	/^		let prev = IconButton(this.HTMLNode, Icon.ChevronLeft, () => this.prev())$/;"	v
 show	src/modal.ts	/^	show() {$/;"	m	class:Modal
 www-components	README.md	/^# www-components$/;"	c
